@@ -1,0 +1,245 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+.box{
+    position: absolute;
+    width: 100%;
+    max-width: 1500px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .inner-box{
+} */
+.form-wraps{
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/side-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.carousel{
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    left: 35%;
+    background-image: linear-gradient(rgba(48, 48, 48, 0.808),rgba(0, 0, 0, 0.432)), url(../images/boheco1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+form{
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.actual-form{
+     margin-top: -50px ;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+   
+}
+.loginn h3{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 2rem;
+    
+}
+.logo img{
+    width: 120px;
+  
+    position: absolute;
+    margin-left: 65px;
+}
+.logo h3{
+    letter-spacing: -0.10px ;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-left: 83px;
+    color: #ffffff;
+ 
+}
+.heading h2{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 2rem;
+    margin-top: -50px;
+    color:#ffffff;
+}
+.heading h3{
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 20px;
+    color:#ffffff;
+
+}
+.bot{
+    margin-top: -50px;
+    margin-left: 1px;
+}
+.bot h6{
+    color: rgb(184, 184, 184);
+    font-weight:400;
+    font-size: 0.75rem;
+    display: inline;
+}
+.toggle{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.toggle:hover{
+    color:rgb(255, 193, 22);
+}
+.input-wrap{
+    position: relative;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.inp-field{
+    position: absolute;
+    
+
+}
+label{
+    position: absolute;
+    left: 0;
+    top: 40%;
+    padding-left:10px ;
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    color: #505050;
+    pointer-events: none;
+    transition: 0.5s;
+ 
+}
+.inp-field.active + label{
+    font-size: 0.90rem;
+    top: -13px;
+    color: #151111;
+    margin-left: -7px;
+}
+
+.inp-field + input[value]:active + label{
+    font-size: 0.90rem;
+    top: -13px;
+    color: #151111;
+    margin-left: -7px;
+  }
+
+.btnlog{
+    margin-top: -95px;
+    display: inline;
+    margin-left: 170px;
+    
+}
+.btnlog a{
+   position: absolute;
+   margin-left: -168px;
+   margin-top: 40px;
+   font-size: 0.75rem;
+   font-weight: 500;
+   color: #ffffff;
+ 
+
+}
+.btnlog .fp:hover{
+    color: rgb(255, 193, 22);
+}
+.btn-sub{
+    position: absolute;
+    margin-left: 91px;
+}
+.btnlog a:hover{
+    color: rgb(255, 255, 255);
+}
+.or{
+    position: absolute;
+    margin-bottom: -500px;
+    margin-left: 100px;
+    color: rgb(36, 36, 36);
+}
+.icons{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 64px;
+}
+.icons img{
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    border-radius: 2rem;
+}
+.social-login{
+    position: absolute;
+    margin-top: 555px;
+    margin-left: 62px;
+}
+.social-login a{
+    margin-left: 20px;
+    color: black;
+}
+.butn{
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+}
+@media (max-width: 560px){
+    /* main{
+        height: 100vh;
+        max-width: 550px;
+        overflow: hidden;
+    } */
+    .box{
+        transform: none;
+        max-width: 550px;
+        height: 100vh;
+        overflow: hidden;
+        position: revert;
+    }
+    .form-wraps{
+        position: revert;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+
+
+    }
+    .heading h2{
+        margin-left: 25px;
+        
+    }
+    .loginn{
+        margin-left: 10px;
+
+    }
+    .carousel{
+        display: none;
+    }
+}
