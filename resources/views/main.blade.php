@@ -25,10 +25,14 @@ body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
-    background: linear-gradient( 50deg , rgba(18, 253, 136, 0.459) 50%, rgb(173, 173, 173) 30%, rgba(253, 249, 10, 0.753) 30%, rgba(255, 255, 255, 0.747) 90%);
+    background: linear-gradient( 50deg , #8bff6e5d 50%, rgba(253, 249, 10, 0.671) 52%, rgba(161, 161, 161, 0.61) 90%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 @keyframes gradient {
@@ -100,7 +104,7 @@ body {
                 <div class="wave"></div>
 
             <div class="content">
-              
+
                 @yield('content')
                 @include('sweetalert::alert')
 

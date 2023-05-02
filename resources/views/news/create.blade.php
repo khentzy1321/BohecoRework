@@ -14,8 +14,6 @@
 </head>
 <body>
 
-@include('layouts.navbar')
-
     <section class="news" id="addnews">
 
         <div class="container">

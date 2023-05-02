@@ -14,8 +14,6 @@
 </head>
 <body>
 
-@include('layouts.navbar')
-
     <section class="advisory">
 
         <div class="container">

@@ -4,9 +4,9 @@
 
 
     <header class="mt-5">
-        <img src="{{asset('images/logo.png')}}" alt="Company Name Logo" class="logo-more shadow">
+        <img src="{{asset('images/logo.png')}}" alt="Company Name Logo" class="logo-more" style="box-shadow: 2px 2px 5px #1b1b1b;">
     </header>
-    
+
     <div class="container-fluid mt-5">
         <div class="card"style="box-shadow: 2px 2px 5px #181818; padding-left: 120px; padding-right: 120px; padding-top: 50px;">
             <div class="card-body">
@@ -25,7 +25,7 @@
                             <li style="list-style: circle; list-style-position:inside">100% in Collection Performance</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2016</strong></h4></p>
                     <li >
@@ -39,7 +39,7 @@
                             <li style="list-style: circle; list-style-position:inside">Special Citation for Fully Compliant EC on Reportorial Requirementsfor the Years 2015 and 2016</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2015</strong></h4></p>
                     <li >
@@ -56,7 +56,7 @@
                             <li style="list-style: circle; list-style-position:inside">Citation for Having Participated in the Country’s Sitio Electrification Program (SEP) 2011-2015</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2011</strong></h4></p>
                     <li >
@@ -70,7 +70,7 @@
                             <li style="list-style: circle; list-style-position:inside">Consistent 100% Collection Performance for the last 15 consecutive years</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2010</strong></h4></p>
                     <li >
@@ -83,7 +83,7 @@
                             <li style="list-style: circle; list-style-position:inside">Commendation to ECs for pioneering and operating mini-hydro power plants thereby ensuring supply security</li>
                         </ul>
                     </li>
-                    
+
                     <br>
                     <p ><h4><strong>2009</strong></h4></p>
                     <p >Awards received by BOHECO I during the NEA 2010 EC Lumens Awards for Performance, Year 2009 Awarding Night on April 9, 2010 at the La Vista Hotel, Tagaytay City</p>
@@ -104,7 +104,7 @@
                             <li style="list-style: circle; list-style-position:inside">Best Region Award, Grand PDA Champions Award</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2008</strong></h4></p>
                     <p >Two highest awards: Diamond EC Grand Hall of Fame Pedro G. Dumol and Diamond GM (Engr. Carlos B. Itable) Grand Hall of Fame Emmanuel N. Pelaez were among the 11 awards received by BOHECO I during the 2009 Lumens Awards for performance, Year 2008 given by the National Electrification Administration (NEA) at the Grand Regal Hotel, Davao City on April 24, 2009</p>
@@ -123,7 +123,7 @@
                             <li style="list-style: circle; list-style-position:inside">Certificate of Recognition for ECs which have Participated in Task Force Kapatid – Typhoon “Frank”</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2007</strong></h4></p>
                     <p >Awards received during the 2008 Lumens for Performance, Year 2007 held at the Cebu Parklane International Hotel on April 25, 2008</p>
@@ -139,7 +139,7 @@
                             <li style="list-style: circle; list-style-position:inside">Special Award for Electric Cooperative which Earned Excellent Rating in Scorecards on EC Corporate Governance</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2006</strong></h4></p>
                     <p >Awards received during the PHILRECA Annual National Convention held at the Legenda Hotel, Subic Freeport Zone, Zambales on April 27, 2007</p>
@@ -159,7 +159,7 @@
                             <li style="list-style: circle; list-style-position:inside">Recognition of Candidates for Certification of Competency in Electric Power Distribution system Engineering</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2005</strong></h4></p>
                     <p >Awards for this year’s operation given during the PHILRECA Annual Convention held at the Grand Caprice Hotel, Limketkai Center, Lapasan, Cagayan de Oro City on May 10, 2006</p>
@@ -172,7 +172,7 @@
                             <li style="list-style: circle; list-style-position:inside">Special Citation – Biggest No. of Attendance to Its Annual General Membership Meeting (AGMA)</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2004</strong></h4></p>
                     <li >
@@ -184,7 +184,7 @@
                             <li style="list-style: circle; list-style-position:inside">Special Citation – Pioneering Efforts and Extraordinary Contribution in the Compact of Cooperation</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2003</strong></h4></p>
                     <li >
@@ -200,8 +200,8 @@
             >
                         </ul>
                     </li>
-    
-    
+
+
                     <br>
                     <p ><h4><strong>2002</strong></h4></p>
                     <li >
@@ -217,7 +217,7 @@
                             <li style="list-style: circle; list-style-position:inside">Special Recognition for ECs with RQIM Network</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2001</strong></h4></p>
                     <li >
@@ -228,7 +228,7 @@
                             <li style="list-style: circle; list-style-position:inside">Exemplary Payor Award</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>2000</strong></h4></p>
                     <li >
@@ -242,7 +242,7 @@
                             <li style="list-style: circle; list-style-position:inside">Special Citation – Having Energized 100% of its Barangays</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1999</strong></h4></p>
                     <li >
@@ -253,7 +253,7 @@
                             <li style="list-style: circle; list-style-position:inside">Exemplary Payor Award</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1998</strong></h4></p>
                     <li >
@@ -265,7 +265,7 @@
                             <li style="list-style: circle; list-style-position:inside">Best Barangay Power Association (BAPA) in Region VII</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1997</strong></h4></p>
                     <li >
@@ -279,7 +279,7 @@
                             <li style="list-style: circle; list-style-position:inside">Best Barangay Power Association in Region VII (Guindaguitan, Dimiao BAPA)</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1996</strong></h4></p>
                     <li >
@@ -290,7 +290,7 @@
                             <li style="list-style: circle; list-style-position:inside">Exemplary Payor Award</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1995</strong></h4></p>
                     <li >
@@ -301,7 +301,7 @@
                             <li style="list-style: circle; list-style-position:inside">Low System Loss Award</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1994</strong></h4></p>
                     <li >
@@ -312,7 +312,7 @@
                             <li style="list-style: circle; list-style-position:inside">Top Performing Electric Cooperative Award (Category A+)</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1993</strong></h4></p>
                     <li >
@@ -321,7 +321,7 @@
                             <li style="list-style: circle; list-style-position:inside">Category “A” Co-op</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1992</strong></h4></p>
                     <li >
@@ -330,7 +330,7 @@
                             <li style="list-style: circle; list-style-position:inside">Consistent Category “A” REC for the Past Five Years</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1991</strong></h4></p>
                     <li >
@@ -339,8 +339,8 @@
                             <li style="list-style: circle; list-style-position:inside">Consistent Category “A” REC for the Past Five Years</li>
                         </ul>
                     </li>
-    
-                    
+
+
                     <br>
                     <p ><h4><strong>1990</strong></h4></p>
                     <li >
@@ -349,7 +349,7 @@
                             <li style="list-style: circle; list-style-position:inside">Consistent Category “A” REC for the Past Five Years</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1989</strong></h4></p>
                     <li >
@@ -357,7 +357,7 @@
                             <li style="list-style: circle; list-style-position:inside">Category “A” Co-op</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1988</strong></h4></p>
                     <li >
@@ -365,7 +365,7 @@
                             <li style="list-style: circle; list-style-position:inside">Category “A” Co-op</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1987</strong></h4></p>
                     <li >
@@ -374,7 +374,7 @@
                             <li style="list-style: circle; list-style-position:inside">Up-to-Date in Loan Amortization Payment</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1986</strong></h4></p>
                     <li >
@@ -382,7 +382,7 @@
                             <li style="list-style: circle; list-style-position:inside">Category “A” Co-op</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1985</strong></h4></p>
                     <li >
@@ -390,7 +390,7 @@
                             <li style="list-style: circle; list-style-position:inside">Category “A” Co-op</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1983</strong></h4></p>
                     <li >
@@ -398,7 +398,7 @@
                             <li style="list-style: circle; list-style-position:inside">Category “A” Co-op</li>
                         </ul>
                     </li>
-    
+
                     <br>
                     <p ><h4><strong>1982</strong></h4></p>
                     <li >
@@ -410,7 +410,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
 </section>
 @endsection

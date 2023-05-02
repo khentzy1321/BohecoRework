@@ -12,13 +12,23 @@ class MainController extends Controller
     public function index()
     {
         $advisories = Advisory::get();
-        $interruptions = Interruption::get();
+        $interruptions = Interruption::all();
         $news = News::get();
+        $countInt = Interruption::count();
+        $countAdv = Advisory::count();
+        $countNews = News::count();
 
-        $interruptions = Interruption::paginate(2);
-        $advisories = Advisory::paginate(2);
-        $news =News::paginate(2);
+        $interruptions = Interruption::paginate(9);
+        $advisories = Advisory::paginate(3);
+        $news = News::paginate(2);
 
-        return view('site', compact('advisories','interruptions', 'news'));
+        return view('site',
+         compact('advisories'
+         ,'interruptions',
+          'news',
+          'countInt',
+          'countAdv',
+          'countNews'
+        ));
     }
 }

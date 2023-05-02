@@ -1,65 +1,9 @@
 @extends('main')
 @section('content')
-    <style>
-        .card-header1 {
-            overflow: hidden;
-            /* background-color: #f1f1f1; */
-            padding: 20px 10px;
-        }
-
-        .card-header1 h1 {
-            /* display: inline; */
-            float: left;
-            color: black;
-
-        }
-
-        .card-header2 a {
-            float: right;
-        }
-
-        .hrr {
-            margin-top: 6px;
-            opacity: 0.2;
-            color: gray;
-
-
-        }
-
-        .ellipsis {
-            width: 100%;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-        }
-        .carousel-item {
-    transition: transform 0.6s ease-in-out;
-    transform: translateX(100%); /* Change to 100% for sliding left */
-}
-
-        .carousel-item.active,
-        .carousel-item-next,
-        .carousel-item-prev {
-            transform: translateX(0);
-        }
-        .carousel-item-next:not(.carousel-item-left),
-        .active.carousel-item-right {
-            transform: translateX(-100%); /* Change to -100% for sliding right */
-        }
-        .carousel-item-prev:not(.carousel-item-right),
-        .active.carousel-item-left {
-            transform: translateX(100%); /* Change to 100% for sliding left */
-        }
-
-    </style>
-
     <section class="news">
-        <div class="container-fluid mt-5">
+        <div class="container-fluid mt-4">
             <div class="card-header1 text-muted">
-                <h1 class="text-dark">LATEST NEWS</h1>
+                <h1 class="text-dark text-center">LATEST NEWS</h1>
                 @role('admin')
                     <div class="card-header2">
                         <a href="{{ route('news.create') }}" class="btn btn-primary"><i class="fas fa-plus"></i></a>
@@ -71,12 +15,12 @@
                 <div class="container-fluid bg-white mt-2" style="border-radius: 3px; box-shadow: 2px 2px 5px #222222;">
                     <div class="row">
                         <div class="col-md-4" style="box-shadow: 2px 2px 5px #1b1b1b">
-                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div id="myCarousel-{{ $new->id }}" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <ol class="carousel-indicators">
-                                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                                        <li data-bs-target="#myCarousel-{{ $new->id }}" data-bs-slide-to="0" class="active"></li>
+                                        <li data-bs-target="#myCarousel-{{ $new->id }}" data-bs-slide-to="1"></li>
+                                        <li data-bs-target="#myCarousel-{{ $new->id }}" data-bs-slide-to="2"></li>
                                     </ol>
                                     @foreach (json_decode($new->image, true) as $index => $img)
                                         <div class="carousel-item @if($index == 0) active @endif">
@@ -129,9 +73,10 @@
                                                     class="btn btn-danger btndelete"><i
                                                         class="fas fa-trash"></i></button>
                                             </form>
-                                        </div>
+
                                     </tr>
                                 @endrole
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -166,7 +111,7 @@
 
                  $('.carousel-indicators li').click(function () {
                     var index = $(this).data('bs-slide-to');
-                    $('#myCarousel').carousel(index);
+                    $('#myCarousel-{{ $new->id }}').carousel(index);
                 });
 
             </script>
@@ -178,6 +123,62 @@
         </div>
         </div>
 
+        <style>
+            .card-header1 {
+                overflow: hidden;
+                /* background-color: #f1f1f1; */
+                padding: 20px 10px;
+            }
+
+            .card-header1 h1 {
+                /* display: inline; */
+                text-align: center;
+                color: black;
+
+            }
+
+            .card-header2 a {
+                float: right;
+            }
+
+            .hrr {
+                margin-top: 6px;
+                opacity: 0.2;
+                color: gray;
+
+
+            }
+
+            .ellipsis {
+                width: 100%;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+            }
+            .carousel-item {
+        transition: transform 0.6s ease-in-out;
+        transform: translateX(100%); /* Change to 100% for sliding left */
+    }
+
+            .carousel-item.active,
+            .carousel-item-next,
+            .carousel-item-prev {
+                transform: translateX(0);
+            }
+            .carousel-item-next:not(.carousel-item-left),
+            .active.carousel-item-right {
+                transform: translateX(-100%); /* Change to -100% for sliding right */
+            }
+            .carousel-item-prev:not(.carousel-item-right),
+            .active.carousel-item-left {
+                transform: translateX(100%); /* Change to 100% for sliding left */
+            }
+
+        </style>
+
     </section>
 @endsection
 
@@ -187,7 +188,7 @@
 https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js
 "></script> --}}
 
-{{-- <script src="{{asset('resources/jquery-3.5.1.js')}}"></script>
+{{--
 <!-- magnific popup -->
 <script src="{{asset('resources/Magnific-Popup-master/dist/jquery.magnific-popup.js')}}"></script>
 <!-- owl carousel -->

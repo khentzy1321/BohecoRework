@@ -4,9 +4,9 @@
 
 
     <header class="mt-5">
-        <img src="{{asset('images/logo.png')}}" alt="Company Name Logo" class="logo-more shadow">
+        <img src="{{asset('images/logo.png')}}" alt="Company Name Logo" class="logo-more " style="box-shadow: 2px 2px 5px #1b1b1b;">
     </header>
-    
+
     <div class="container-fluid mt-5">
         <div class="card" style="box-shadow: 2px 2px 5px #181818; padding: 50px;">
             <div class="card-body">
@@ -99,9 +99,9 @@
             </div>
         </div>
     </div>
-    
+
 <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
-    
+
 </section>
 
 @endsection

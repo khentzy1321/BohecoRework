@@ -1,5 +1,4 @@
 @extends('main')
-<script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
 @section('content')
 <style>
     .card-header1 {
@@ -9,7 +8,6 @@
    }
    .card-header1 h1{
        /* display: inline; */
-       float: left;
        color: black;
 
    }
@@ -27,17 +25,15 @@
 </style>
 
    <section class="advisory">
-       <div class="container-fluid mt-4">
-           <div class="card1">
-               <div class="card-header1 text-muted ">
-                   <h1 class=" text-dark">CURRENT INTERRUPTIONS</h1>
+       <div class="container-fluid mt-5">
+               <div class="card-header1 text-muted mt-5">
+                   <h1 class=" text-dark text-center ">CURRENT INTERRUPTIONS</h1>
                    @role('admin')
                    <div class="card-header2">
                        <a href="{{route('int.create')}}" class="btn btn-primary"><i class="fas fa-plus"></i></a>
                    </div>
                    @endrole
                </div>
-
                @foreach ($interruptions as $int)
                <div class="container-fluid mb-2">
                    <div class="card mt-2" style="box-shadow: 2px 2px 5px #181818">
@@ -74,39 +70,40 @@
                    </div>
                </div>
                @endforeach
-           </div>
        </div>
-       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-       <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
-       <script>
-           function deleteData(id, what, where){
-               Swal.fire({
-                   title: 'Are you sure you want to delete this?',
-                   text: `"What:"${what}".`,
-                   icon: 'warning',
-                   showCancelButton: true,
-                   confirmButtonColor: '#3085d6',
-                   cancelButtonColor: '#d33',
-                   confirmButtonText: 'Proceed'
-                   }).then((result) => {
-                   if (result.isConfirmed) {
-                       document.getElementById('delete-form-' + id).submit();
-                       // Swal.fire(
-                       // 'Deleted!',
-                       // 'Your file has been deleted.',
-                       // 'success'
-                       // )
-                   }
-                   })
-           }
-         </script>
        <div class="card-footer py-4">
            <div class="d-flex justify-content-center">
                {{ $interruptions->links() }}
            </div>
        </div>
    </section>
+   <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+    function deleteData(id, what, where){
+        Swal.fire({
+            title: 'Are you sure you want to delete this?',
+            text: `"What:"${what}".`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Proceed'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById('delete-form-' + id).submit();
+                // Swal.fire(
+                // 'Deleted!',
+                // 'Your file has been deleted.',
+                // 'success'
+                // )
+            }
+            })
+    }
+  </script>
 
    <script>
    function deleteInterruptions() {
@@ -125,6 +122,6 @@
            }
        });
    }
-</script
+</script>
 @endsection
 

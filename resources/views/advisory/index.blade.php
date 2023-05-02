@@ -7,8 +7,6 @@
         padding: 20px 10px;
     }
     .card-header1 h1{
-        /* display: inline; */
-        float: left;
         color: black;
 
     }
@@ -30,9 +28,8 @@
 </style>
     <section class="advisory">
         <div class="container-fluid mt-5">
-            <div class="card1">
                 <div class="card-header1 text-muted">
-                    <h1 class=" text-dark">CURRENT ADVISORY</h1>
+                    <h1 class=" text-dark text-center">CURRENT ADVISORY</h1>
                     @role('admin')
                     <div class="card-header2">
                         <a href="{{route('advisory.create')}}" class="btn btn-primary"><i class="fas fa-plus" aria-hidden="true"></i></a>
@@ -41,7 +38,7 @@
                 </div>
 
                 @foreach ($advisories as $adv)
-                <div class="container-fluid mb-2">
+                <div class="container-fluid mb-2 mt-2">
                     <div class="card mt-2 ">
                         <div class="card-body" style="box-shadow: 2px 2px 5px #181818">
 
@@ -67,7 +64,6 @@
                 </div>
                 </div>
                 @endforeach
-            </div>
         </div>
         <script>
             function deleteData(id, place){

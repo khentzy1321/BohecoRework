@@ -15,9 +15,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 </head>
 <body>
-
-@include('layouts.navbar')
-
     <section class="advisory">
 
         <div class="container">
